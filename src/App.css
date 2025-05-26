@@ -1,0 +1,446 @@
+/* --- Reset & Base --- */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  color: #23272f;
+  min-height: 100vh;
+  letter-spacing: 0.01em;
+  font-size: 17px;
+}
+
+.App {
+  max-width: 1100px;
+  margin: 48px auto 32px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 40px rgba(30,144,255,0.07), 0 1.5px 8px rgba(0,0,0,0.03);
+  padding: 0 0 40px 0;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.App:hover {
+  box-shadow: 0 16px 48px rgba(30,144,255,0.13), 0 2px 12px rgba(0,0,0,0.06);
+}
+
+/* --- Header --- */
+.portfolio-header {
+  background: linear-gradient(90deg, #e0eafc 60%, #cfdef3 100%);
+  padding: 48px 48px 32px 48px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  border-bottom: 1.5px solid #e3e7ed;
+  flex-wrap: wrap;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.profile-pic {
+  width: 92px;
+  height: 92px;
+  background: linear-gradient(135deg, #1e90ff 60%, #6dd5ed 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(30,144,255,0.13);
+  border: 3px solid #fff;
+}
+
+.profile-initials {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(30,144,255,0.18);
+}
+
+.profile h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #23272f;
+}
+
+.profile h2 {
+  margin: 6px 0 14px 0;
+  font-size: 1.18rem;
+  color: #1e90ff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.contact-info {
+  font-size: 1.02rem;
+  color: #444;
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.contact-info a {
+  color: #1e90ff;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.contact-info a:hover {
+  color: #23272f;
+}
+
+/* --- Main Layout --- */
+.portfolio-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px 24px 0 24px;
+}
+
+.summary,
+.key-achievements,
+.experience,
+.skills,
+.education,
+.certification,
+.languages,
+.projects,
+.interests {
+  min-width: 0;
+}
+
+/* Responsive: reduce padding on small screens */
+@media (max-width: 600px) {
+  .portfolio-main {
+    padding: 18px 4vw 0 4vw;
+    gap: 20px;
+  }
+}
+
+/* --- Card Style for All Sections --- */
+.summary,
+.key-achievements,
+.experience,
+.skills,
+.education,
+.certification,
+.languages,
+.projects,
+.interests {
+  margin-bottom: 0;
+  text-align: left;
+  background: #f6faff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(30,144,255,0.07);
+  border-left: 4px solid #1e90ff;
+  border: 1.5px solid #e3e7ed;
+  transition: box-shadow 0.2s, border 0.2s, transform 0.2s;
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  padding: 28px 28px 22px 32px;
+}
+
+/* Apply the same hover effect to all blocks */
+.summary:hover,
+.key-achievements:hover,
+.experience:hover,
+.skills:hover,
+.education:hover,
+.certification:hover,
+.languages:hover,
+.projects:hover,
+.interests:hover {
+  box-shadow: 0 8px 32px rgba(30,144,255,0.10);
+  border: 1.5px solid #b0c4de;
+  transform: translateY(-2px) scale(1.012);
+}
+
+section h3 {
+  color: #1e90ff;
+  font-size: 1.18rem;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-bottom: 1.5px solid #e3e7ed;
+  padding-bottom: 4px;
+  background: linear-gradient(90deg, #e0eafc 60%, #cfdef3 100%);
+  border-radius: 6px 6px 0 0;
+  padding-left: 4px;
+}
+
+/* --- Make summary and projects visually larger --- */
+.summary, .projects {
+  padding: 36px 40px 32px 40px;
+  font-size: 1.08rem;
+}
+
+/* --- Skills Block --- */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f6faff;
+  border-left: 4px solid #1e90ff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(30,144,255,0.07);
+  margin-bottom: 0;
+  padding: 28px 28px 22px 32px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-top: 8px;
+}
+
+.skills-list span {
+  background: linear-gradient(90deg, #e3e7ed 60%, #d0eaff 100%);
+  color: #1e90ff;
+  padding: 7px 18px;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(30,144,255,0.06);
+  margin-bottom: 4px;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  cursor: pointer;
+  border: 1px solid #e3e7ed;
+  letter-spacing: 0.5px;
+}
+.skills-list span:hover {
+  background: #1e90ff;
+  color: #fff;
+  border: 1px solid #1e90ff;
+  transform: scale(1.08);
+}
+
+/* --- Key Achievements Block --- */
+.key-achievements {
+  background: #f6faff;
+  border-left: 4px solid #1e90ff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(30,144,255,0.07);
+  margin-bottom: 0;
+  padding: 28px 28px 22px 32px;
+}
+
+.key-achievements ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.key-achievements li {
+  margin-bottom: 18px;
+  padding-left: 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #1e90ff;
+  position: relative;
+}
+
+.key-achievements .achievement-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #1e90ff;
+  margin-bottom: 6px;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.key-achievements .achievement-content {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #23272f; /* Black/dark color for content */
+  margin-left: 0;
+  margin-top: 2px;
+  line-height: 1.7;
+  background: none;
+  border: none;
+  padding: 0;
+  display: block;
+}
+
+/* --- Experience, Projects, Lists --- */
+.experience > div,
+.projects > div {
+  margin-bottom: 18px;
+}
+
+ul {
+  margin: 8px 0 8px 18px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 6px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #23272f;
+  font-weight: 400;
+}
+
+.education ul,
+.certification ul,
+.languages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.education li,
+.certification li,
+.languages li {
+  margin-bottom: 14px;
+}
+
+.languages li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.languages li strong {
+  min-width: 70px;
+  color: #1e90ff;
+  font-weight: 600;
+}
+
+.language-dots {
+  display: flex;
+  gap: 3px;
+  margin-right: 8px;
+}
+
+.language-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #e3e7ed;
+  border: 1.5px solid #b0c4de;
+  display: inline-block;
+  transition: background 0.2s, border 0.2s;
+}
+
+.language-dot.filled {
+  background: #1e90ff;
+  border: 1.5px solid #1e90ff;
+}
+
+.projects > div strong {
+  color: #1e90ff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* --- Interests --- */
+.interests ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.interests li {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 22px;
+}
+
+.interests li::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, #1e90ff 60%, #6dd5ed 100%);
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-top: 3px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e3e7ed;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b0c4de;
+  border-radius: 8px;
+}
+
+/* --- Animations & Effects --- */
+section {
+  animation: fadeInUp 0.7s cubic-bezier(.39,.575,.565,1) both;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* --- Button Style Example (for future use) --- */
+.btn {
+  background: linear-gradient(90deg, #1e90ff 60%, #6dd5ed 100%);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 8px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(30,144,255,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+  background: #23272f;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(30,144,255,0.18);
+}
+
+/* --- Responsive for mobile --- */
+@media (max-width: 900px) {
+  .portfolio-main {
+    grid-template-areas:
+      "summary"
+      "key"
+      "experience"
+      "skills"
+      "education"
+      "certification"
+      "languages"
+      "projects"
+      "interests";
+    grid-template-columns: 1fr;
+    gap: 24px 0;
+    padding: 24px 8px 0 8px;
+  }
+  .summary, .projects, .skills, .key-achievements, .languages, .certification, .experience, .education, .interests {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .projects, .skills, .key-achievements, .languages, .certification, .experience, .education, .interests, .summary {
+    border-left: none;
+    border-top: 4px solid #1e90ff;
+  }
+}
