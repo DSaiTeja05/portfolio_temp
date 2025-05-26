@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/your-repo-name/static/css/main.bc3c74dd.chunk.css",
+    "main.js": "/your-repo-name/static/js/main.05942336.chunk.js",
+    "main.js.map": "/your-repo-name/static/js/main.05942336.chunk.js.map",
+    "runtime~main.js": "/your-repo-name/static/js/runtime~main.2b390d0d.js",
+    "runtime~main.js.map": "/your-repo-name/static/js/runtime~main.2b390d0d.js.map",
+    "static/js/2.c7821bdd.chunk.js": "/your-repo-name/static/js/2.c7821bdd.chunk.js",
+    "static/js/2.c7821bdd.chunk.js.map": "/your-repo-name/static/js/2.c7821bdd.chunk.js.map",
+    "static/js/3.a29efab2.chunk.js": "/your-repo-name/static/js/3.a29efab2.chunk.js",
+    "static/js/3.a29efab2.chunk.js.map": "/your-repo-name/static/js/3.a29efab2.chunk.js.map",
+    "index.html": "/your-repo-name/index.html",
+    "precache-manifest.3d6a7f5697b5c818cc6a7ed6097f79be.js": "/your-repo-name/precache-manifest.3d6a7f5697b5c818cc6a7ed6097f79be.js",
+    "service-worker.js": "/your-repo-name/service-worker.js",
+    "static/css/main.bc3c74dd.chunk.css.map": "/your-repo-name/static/css/main.bc3c74dd.chunk.css.map"
+  }
+}
